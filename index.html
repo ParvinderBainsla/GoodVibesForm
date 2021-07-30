@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Vibes Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Good Vibes From</h1>
+        <div class="form">
+            <p>Tell us something positive thant happened to you today.</p>
+            <form action="backEnd.php" class="f-one">
+                <div class="main">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </div>
+                <div class="main">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email address">
+                </div>
+                <div class="main">
+                    <label for="scale">On a scale of 1-10, how good was it?</label>
+                    <input type="text" name="scale" placeholder="Enter a number between 1 and 10">
+                </div>
+                <div class="pass">
+                    <label for="place">Where did it happen?</label>
+                    <select name="yourPlace" id="place">
+                        <option value="home">At home</option>
+                        <option value="commute">On my commute</option>
+                        <option value="work">At work</option>
+                        <option value="street">on the street</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="pass">
+                    <label for="season">At what time of day did it happen?</label>
+                    <div class="f-btn">
+                        <div class="nor">
+                            <input type="radio" name="season"> <label for="morning">Morining</label>
+                        </div>
+                        <div class="nor">
+                            <input type="radio" name="season"> <label for="afternoon">Afternoon</label>
+                        </div>
+                        <div class="nor">
+                            <input type="radio" name="season"> <label for="evening">Evening</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pass">
+                    <label for="feeling">What emotios did you experience?<br>(Select all that apply)</label>
+                    <div class="f-btn">
+                        <div class="nor">
+                            <input type="checkbox" name="feeling"> <label for="excited">Excited</label>
+                        </div>
+                        <div class="nor">
+                            <input type="checkbox" name="feeling"> <label for="humbled">Humbled</label>
+                        </div>
+                        <div class="nor">
+                            <input type="checkbox" name="feeling"> <label for="elated">Elated</label>
+                        </div>
+                        <div class="nor">
+                            <input type="checkbox" name="feeling"> <label for="loved">Loved</label>
+                        </div>
+                        <div class="nor">
+                            <input type="checkbox" name="feeling"> <label for="enthusiastic">Enthusiastic</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pass">
+                    <label for="experience">Please describe your experience.</label>
+                    <div class="f-btn">
+                        <textarea name="desc" id="desc" rows="2" cols="50" placeholder="Enter your experience here..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <button>Submit</button>
+    </div>
+    
+</body>
+
+</html>
